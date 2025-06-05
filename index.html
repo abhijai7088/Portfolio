@@ -1,102 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Jaiswal - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek Jaiswal | Tech Innovator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet"/>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Abhishek Jaiswal</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<body class="dark-mode">
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Abhishek Jaiswal</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="section hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h2>Hi, I’m Abhishek Jaiswal</h2>
+        <p>AI/ML Researcher | Blockchain Builder | Web Developer | Hackathon Finalist</p>
+        <a href="#contact" class="btn">Let’s Connect</a>
+      </div>
+      <img src="abhi.jpg" alt="Abhishek Jaiswal" class="hero-img"/>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container about-container">
+      <h2>About Me</h2>
+      <p>
+        I’m a B.Tech Computer Science (AI) student at ABESIT, Ghaziabad (AKTU). I’m driven by a passion for building impactful tech solutions. My journey includes AI-powered systems, blockchain innovation, and intuitive web platforms. Finalist at Hacknovate 6.0, 2nd Prize Winner at SuperNova Hackathon, and an active contributor in the IIC at ABESIT.
+      </p>
+      <ul class="achievements">
+        <li>🏆 Finalist – Hacknovate 6.0</li>
+        <li>🥈 2nd Prize – SuperNova Hackathon (GL Bajaj)</li>
+        <li>📡 Projects featured AI, YOLOv8, NFC + Ethereum, Flask + React, MongoDB, and more</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h4>Web Development</h4>
+          <ul><li>HTML, CSS, JavaScript, React.js</li><li>Flask, Node.js</li></ul>
         </div>
-    </header>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I’m Abhishek Jaiswal, a passionate B.Tech graduate with a deep-rooted interest in programming and a thirst for knowledge. My journey into the world of technology began with a fascination for problem-solving and a desire to create impactful solutions through code. I constantly immerse myself in new technologies and methodologies to expand my skill set. Programming is not just about writing code; it’s about innovating, collaborating, and turning ideas into reality.</p>
+        <div>
+          <h4>AI/ML & Python</h4>
+          <ul><li>YOLO, OpenCV, TensorFlow</li><li>ArcFace, ReID, DeepLearning</li></ul>
         </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <h4>1. Web Development</h4>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React JS</li>
-            </ul>
-            <h4>2. Programming Languages</h4>
-            <ul>
-                <li>Python</li>
-                <li>C Language</li>
-            </ul>
+        <div>
+          <h4>Blockchain</h4>
+          <ul><li>Solidity, Web3.js, IPFS</li><li>Smart Contracts, MetaMask</li></ul>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>E-Commerce Store</h3>
-                <p>The Sukun Store Cart System is an essential feature of an e-commerce platform designed to streamline the shopping experience for users. This project focuses on the implementation of a professional and user-friendly shopping cart, billing, and checkout system. It mirrors the functionality found in modern e-commerce websites and offers seamless interaction for users as they add items to their cart, view product details, and proceed to purchase.</p>
-                <a href="https://github.com/abhijai7088/-E-Commerce-Store/tree/master" target="_blank">View Project</a>
-            </div>
-
-            <div class="project">
-                <h3>ClimateTrack-AI: The Ultimate Climate Monitoring Dashboard</h3>
-                <p>ClimateTrack AI is a cutting-edge climate tracking system that provides real-time environmental updates, air quality monitoring, and AI-driven weather forecasting. This dashboard empowers individuals, researchers, and policymakers to make informed decisions about climate change and its effects.</p>
-                <a href="https://github.com/abhijai7088/-ClimateTrack-AI-The-Ultimate-Climate-Monitoring-Dashboard/tree/master/frontend" target="_blank">View Project</a>
-            </div>
-
+        <div>
+          <h4>Tools</h4>
+          <ul><li>MongoDB, GitHub, VS Code</li><li>Google Colab, Anaconda, Postman</li></ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="resume" class="section">
-        <div class="container">
-            <h2>Resume</h2>
-            <a href="link_to_your_resume.pdf" target="_blank">Download my Resume</a>
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="climate_change.png" alt="ClimateTrack AI">
+          <div>
+            <h3>ClimateTrack AI 🌍</h3>
+            <p>AI climate dashboard with chatbot, AQI, NASA APIs, glacier tracking.</p>
+            <a href="https://github.com/abhijai7088/-ClimateTrack-AI-The-Ultimate-Climate-Monitoring-Dashboard" target="_blank">GitHub Repo</a>
+          </div>
         </div>
-    </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+        <div class="project-card">
+          <img src="facetrace.png" alt="Lost Person Tracker">
+          <div>
+            <h3>AI Lost Person Tracker 🧠</h3>
+            <p>Real-time CCTV detection using YOLOv8, ArcFace, ByteTrack + ReID.</p>
+            <a href="https://github.com/abhijai7088/Lost-Person-Tracking-System" target="_blank">GitHub Repo</a>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Abhishek Jaiswal. All rights reserved.</p>
+        <div class="project-card">
+          <img src="army.png" alt="Army Dispatch System">
+          <div>
+            <h3>Army Vehicle Dispatch 🚛</h3>
+            <p>React + Flask dispatch system with admin logs and status dashboard.</p>
+            <a href="https://github.com/abhijai7088/Army-Vehicle-Dispatch-System" target="_blank">GitHub Repo</a>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="project-card">
+          <img src="new page.jpg" alt="NFC Blockchain Auth">
+          <div>
+            <h3>Smart NFC + Blockchain 🔐</h3>
+            <p>Anti-counterfeit product verification using NFTs + Ethereum + NFC.</p>
+            <a href="https://github.com/abhijai7088/Smart-NFC-Blockchain-Authentication" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="sukun.png" alt="E-Commerce App">
+          <div>
+            <h3>E-Commerce Store 🛒</h3>
+            <p>Cart + Checkout + Billing for Sukun Shopping App (MVP).</p>
+            <a href="https://github.com/abhijai7088/-E-Commerce-Store" target="_blank">GitHub Repo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Abhishek Jaiswal | Designed with 💚</p>
+      <div class="socials">
+        <a href="https://github.com/abhijai7088" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/abhishekjaiswalabesit/" target="_blank">LinkedIn</a>
+        <a href="mailto:abhijai7088@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
